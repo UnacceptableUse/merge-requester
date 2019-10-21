@@ -1,0 +1,15 @@
+{
+  "name": "merge-requester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Peter Maguire",
+  "license": "ISC",
+  "dependencies": {
+    "gitlab": "^11.1.2"
+  }
+}
