@@ -82,11 +82,12 @@ function findProjectLocally(project){
 
     console.log(`${project} is not a PHP project.`);
 
-    let go = findProject(config.goDirectory, project);
-    if(go)
-        return config.goDirectory+"/"+go;
-
-    console.log(`${project} is not a Go project.`);
+    for (let i = 0; i < config.goDirectory.length; i++){
+        let go = findProject(config.goDirectory[i], project);
+        if(go)
+            return config.goDirectory[i]+"/"+go;
+        console.log(`${project} is not a Go project.`);
+    }
 
     return null;
 }
